@@ -1,7 +1,3 @@
-* {
-    box-sizing: border-box;
-  }
-  
   /* Style inputs */
   input[type=text], select, textarea {
     width: 100%;
@@ -26,6 +22,7 @@
   
   /* Style the container/contact section */
   .container {
+    margin-left: auto;
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 10px;
@@ -57,10 +54,13 @@
   .wording2 {
     text-align: center;
     position: absolute;
-    top: ;
     left: 10%;
     transform: translate(-50%, -50%);
     color: rgb(0, 0, 0);
-    font-family: 'Comic Sans', cursive;
+    font-family: "Roboto", sans-serif;
     font-size: 20PX;
+  }
+
+  .marg {
+    margin-left: auto;
   }

@@ -1,58 +1,112 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="The description for the website">
-        <title>Contact Us Page</title>
-        <link rel="stylesheet" href="contact_us.css">
-    </head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="The description for the website">
+    <title>GARCI Contact Us</title>
+    <link rel="stylesheet" href="contact_us.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
 
-    <body class="intro">
-        
-        <header>
-            
-        </header>
+  <body class="intro">
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+    <div class="w3-container w3-display-container w3-padding-16">
+      <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+      <h3 class="w3-wide"><b>GARCI</b></h3>
+    </div>
+    <div class="w3-padding-64 w3-large w3-text-grey corrective" style="font-weight:bold">
+      <a href="Home.html" class="w3-bar-item w3-button">Home</a>
+      <a href="Shirts.html" class="w3-bar-item w3-button">Shirts</a>
+      <a href="Dresses.html" class="w3-bar-item w3-button">Dresses</a>
+    </div>
+    <a href="Contactus.html" class="w3-bar-item w3-button w3-padding">Contact</a> 
+  </nav>
 
-        <section class="intro">
-            <h1 class="Contct Us">
-                <div class="container">
-                    <div style="text-align:center">
-                      <h2>Contact Us</h2>
-                      <p>Swing by and talk to our staff, or leave us a message:</p>
-                    </div>
-                    <div class="row">
-                      <div class="column">
-                        <img src="boutique_image.jpeg" style="width:100%">
-                      </div>
-                      <div class="column">
-                        <form action="/action_page.php">
-                          <label for="fname">First Name</label>
-                          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                          <label for="lname">Last Name</label>
-                          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                          <label for="country">Country</label>
-                          <select id="country" name="country">
-                            <option value="australia">Australia</option>
-                            <option value="canada">Canada</option>
-                            <option value="usa">USA</option>
-                          </select>
-                          <label for="subject">Subject</label>
-                          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-                          <input type="submit" value="Submit" href="HTML Final.html">
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-            </h1>
-            <p>
-               
-            </p>
-        </section>
+  <!-- Top menu on small screens -->
+  <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+    <a class="navbar-brand" href="Home.html">
+      <div class="w3-bar-item w3-padding-24 w3-wide">GARCI</div>
+    </a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+  </header>
 
-        <footer>
-            <a href="HTML Final.html">
-                <button type="button" class="wording2">Go back Shopping</button>
-            </a>
-        </footer>
-    </body>
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    <section class="intro">
+      <h1 class="Contct Us">
+        <div class="container marg">
+          <div style="text-align:center">
+            <h2>Contact Us</h2>
+            <p>Swing by and talk to our staff, or leave us a message:</p>
+          </div>
+          <div class="row">
+            <div class="column" style="text-align: right;">
+              <img src="boutique_image.jpeg" style="width:70%">
+            </div>
+            <div class="column">
+              <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                <input type="submit" value="Submit" href="HTML Final.html">
+              </form>
+            </div>
+          </div>
+        </div>
+      </h1>
+    </section>
+    <!-- Footer -->
+    <footer class="w3-padding-64 w3-light-grey w3-small w3-center marg" style="max-width:1275px" id="footer">
+      <div class="w3-row-padding">
+        <div class="w3-col s4">
+          <h4>Contact</h4>
+          <p>Want Updates On New Arrivals?<br>Sign Up For Updates!</p>
+          <form action="/action_page.php" target="_blank">
+            <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+            <button type="submit" class="w3-button w3-block w3-black">Send</button>
+          </form>
+        </div>
+
+        <div class="w3-col s4">
+          <h4>We accept</h4>
+          <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
+          <p><i class="fa fa-fw fa-credit-card"></i> Master Card</p>
+          <p><i class="fa fa-fw fa-credit-card"></i> Discover</p>
+          <p><i class="fa fa-fw fa-credit-card"></i> Visa</p>
+          <br>
+        </div>
+
+        <div class="w3-col s4 w3-justify">
+          <h4>Store</h4>
+          <p><i class="fa fa-fw fa-map-marker"></i> Garcia Inc.</p>
+          <p><i class="fa fa-fw fa-phone"></i> (123)456-7890</p>
+          <p><i class="fa fa-fw fa-envelope"></i> ngarci7@uiwtx.edu</p>
+        </div>
+      </div>
+    </footer>
+    <script>// Open and close sidebar
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
+          
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+    </script>
+  </body>
 </html>
